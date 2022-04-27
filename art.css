@@ -1,0 +1,80 @@
+
+body {
+    background: linear-gradient(146deg, #ced5d3, #0e0f0e);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+
+.button {
+background: rgba( 255, 255, 255, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.5px );
+-webkit-backdrop-filter: blur( 0.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: rgb(48, 41, 41);
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    
+    padding: 20px;
+
+}
+.pixel{
+    height: 10px;
+    width: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(215, 215, 233);
+}
+.canvas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 850px;
+    vertical-align: middle;
+    box-shadow: 3px 3px 3px black;
+}
+.red{
+background-color: rgb(255, 0, 0);
+}
+.blue{
+background-color: blue;
+}
+.green{
+background-color: green;
+}
+
+#colorcontrols{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.canvascontainer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button:hover{
+    background-color: white;
+}
