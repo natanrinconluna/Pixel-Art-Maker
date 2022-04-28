@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Maker</title>
-    <script defer src="artmaker.js" ></script>
-    <link rel = "stylesheet" href= "art.css" >
-</head>
-<body>
-    <div class="canvascontainer">
-        <div class = "canvas"></div>
-
+    <script defer src="artmaker.js"></script>
+    <link rel="stylesheet" href="art.css" />
+  </head>
+  <body>
+    <h3 id="Header">Welcome to Pixel Art Marker</h3>
+    <h5 class="SubHeader">
+      <a>LinkedIn</a>
+      <a>Github</a>
+      <a>Email</a>
+      <a>Random</a>
+      <a>Random</a>
+    </h5>
+    <div class="home-elements">
+      <div class="canvascontainer">
+        <li class="canvas"></li>
+      </div>
+      <div class="function-buttons">
+        <li id="function-button-list">
+          <ul>
+            ❌
+          </ul>
+          <ul>
+            💾
+          </ul>
+          <ul>
+            🐶
+          </ul>
+          <ul>
+            🐱
+          </ul>
+          <ul>
+            🐸
+          </ul>
+        </li>
+      </div>
     </div>
-    <div id='colorcontrols'></div>
-
-</body>
+    <div id="color-controls"></div>
+    <div id="color-selected-container">
+      <div id="title-color-selected" class="color-selected">
+        Color Currently Selected:
+      </div>
+      <div id="color-selected"></div>
+    </div>
+  </body>
 </html>

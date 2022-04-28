@@ -1,9 +1,14 @@
+//Global Variables
 const canvas = document.querySelector('.canvas');
-const colorControl = document.querySelector('#colorcontrols')
-let color = "grey"
-let colortext = ['red','blue','green',]
+const colorControl = document.querySelector('#color-controls');
+let colorButton = document.querySelector('.button');
+let colorSelected = document.querySelector("#color-selected")
 
-for(let i = 0; i < 2700; i++){
+let color = "";
+let colortext = ['red','orange', 'yellow','green','blue', 'violet'];
+
+//Create Grid
+for(let i = 0; i < 255; i++){
     const div = document.createElement('div');
     div.className = "pixel";
     div.setAttribute('id', 'squares')
@@ -13,18 +18,22 @@ for(let i = 0; i < 2700; i++){
     canvas.append(div);
 }
 
-
+//Creates Color Button
 for(let j = 0; j < colortext.length; j++){
-  const div = document.createElement('div');
-  div.addEventListener('click', () => {
+  const button = document.createElement('div');
+  button.addEventListener('click', () => {
     color = colortext[j]
   })
-  div.setAttribute('id', 'color')
-  div.className = 'button';
-  div.innerText = colortext[j]
-  colorControl.appendChild(div)
+  button.setAttribute('id', 'color')
+  button.className = 'button';
+  button.innerText = "button"
+  button.style.color = colortext[j]
+  button.style.backgroundColor = colortext[j]
+  colorControl.appendChild(button)
+
+  colorSelected.innerText = "button"
+  colorSelected.style.color = colortext[j]
+  colorSelected.style.backgroundColor = colortext[j]
 }
 
-let colorButton = document.querySelector('.button');
-// colorButton.addEventListener('click' , (e) => 
-//   console.log(e.target));
+//Set Background Color and Format for "Current Selected Color"
