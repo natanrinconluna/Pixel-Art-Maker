@@ -1,17 +1,10 @@
 # Pixel Art Maker
 
-In this exercise, you'll create your own pixel art maker which will allow a user to choose colors from a palette and then paint pixel art. The interface is completely up to you, but it could look something like this.
+On this personal projected I decided to make a pixel art maker. The idea originated from a school project. After completing the program I've decided to come back and implement better styling, and overall functionallity while still maintaining the integrity of strictly front end development. 
 
-![Example of Pixel Art Maker](pixel-art-maker-alt.png)
+This web application is a pixel art maker that allows users to select a color from a color pallet and then paint pixel art. 
 
-More specifically, your pixel art maker should allow a user to do the following.
 
-1. Start with a blank canvas of pixels.
-1. Select a brush color from a palette of colors.
-1. Paint the pixels on the canvas using the brush color.
-1. Repeat step 2.
-
-Here's a development workflow that we recommend you use.
 
 1. Fork and clone this repository.
 1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.

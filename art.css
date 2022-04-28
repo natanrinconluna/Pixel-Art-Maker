@@ -1,50 +1,64 @@
 body {
-    background-color: rgb(200, 248, 242);
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  background-color: rgb(0, 0, 0);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0%;
+  margin: 0%;
 }
 
 .button {
-  background: rgba(213, 0, 0, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0.5px);
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0.5em 1em 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(1em);
   border-radius: 1em;
-  border: 1px solid rgb(0, 0, 0);
+  border: 0.1em solid rgb(0, 0, 0);
   border-width: 0.1em;
   color: rgb(48, 41, 41);
   cursor: pointer;
   font-size: 1em;
   font-weight: bold;
-  padding: 5px;
+  padding: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .pixel {
-  height: 20px;
-  width: 20px;
-  border: 2px solid rgb(0, 0, 0);
+  height: 0.5em;
+  width: 0.5em;
+  border: 0.1em solid rgb(255, 255, 255);
   background-color: rgb(215, 215, 233);
 }
 .canvas {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  max-width: 850px;
   vertical-align: middle;
-  box-shadow: 3px 3px 3px black;
   margin-top: 1em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 3em;
 }
 
 #color-controls {
   display: flex;
-  margin-top: 20px;
-  justify-content: space-evenly;
+  margin-top: 1em;
   flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.881);
+  border-radius: 1em;
+  padding: 2em;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .canvascontainer {
   display: flex;
   justify-content: center;
   margin: 1em;
+  background-color: rgb(86, 122, 195);
 }
 
 .button:hover {
@@ -52,103 +66,128 @@ body {
 }
 
 #Header {
-  background-color: rgb(251, 128, 128);
+  background-color: rgb(255, 255, 255);
   padding: 1em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0;
+  color: rgb(86, 122, 195);
 }
 
 #color-selected {
-  background: rgba(213, 0, 0, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0.5px);
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0.5em 1em 0 rgb(255 255 255 / 37%);
+  backdrop-filter: blur(1em);
   border-radius: 1em;
-  border: 1px solid rgb(0, 0, 0);
+  border: 0.1em solid rgb(0, 0, 0);
   border-width: 0.1em;
   color: rgb(48, 41, 41);
   cursor: pointer;
   font-size: 1em;
   font-weight: bold;
-  padding: 5px;
+  padding: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
-#color-selected-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    margin-top: 1em;
+#color-selected-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.881);
+  padding: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-radius: 1em;
 }
-#title-color-selected{
-display: flex;
-justify-content: center;
-align-items: center;
+#title-color-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.SubHeader{
-    color: rgb(255, 255, 255);
-    background-color: black;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
+.SubHeader {
+  color: rgb(255, 255, 255);
+  background-color: rgb(86, 122, 195);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
-.function-buttons{
-    background-color: rgba(255, 255, 255, 0.881);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0%;
-    padding: 0.5em;
+.function-buttons {
+  background-color: rgba(255, 255, 255, 0.881);
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  padding: 0.5em;
+  font-size: 2em;
+  align-items: center;
+  border-radius: 1em;
+  justify-content: space-between;
 }
 
-.home-elements{
-    width: 100%;
-    display: flex;
-    align-items: stretch;
-    align-content: center;
-    justify-content: center;
-    flex-direction: row;
-    background: linear-gradient(to top, #502c2c, #b92929);
+.home-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #000000;
+  align-items: stretch;
+  justify-content: center;
 }
-#function-button-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+#function-button-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0em;
+  margin-inline-end: 0em;
+  padding-inline-start: 0em;
+}
+#container-subfooter {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
 }
 
 /* @media only screen and (max-width: 320px) {
     /* For mobile phones: */
-    /* .menu, .main, .right {
+/* .menu, .main, .right {
       width: 100%;
     }
   } */
-  /* @media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
     /* For mobile phones: */
-    /* .menu, .main, .right {
+/* .menu, .main, .right {
       width: 100%;
     }
   } */
-  /* @media only screen and (max-width: 425px) {
+/* @media only screen and (max-width: 425px) {
     /* For mobile phones: */
-    /* .menu, .main, .right { 
+/* .menu, .main, .right { 
       /* width: 100%;
     }
   }  */
-  /* @media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    /* .menu, .main, .right {
+/* .menu, .main, .right {
       width: 100%;
     }
   }
   @media only screen and (max-width: 1024px) {
     /* For mobile phones: */
-    /* .menu, .main, .right { */
-      /* width: 100%; */
-    /* } */
-  /* } */
-  /* @media only screen and (max-width: 1440px) { */
-    /* For mobile phones: */
-    /* .menu, .main, .right { */
-      /* width: 100%; */
-    /* } */
-  /* }  */
+/* .menu, .main, .right { */
+/* width: 100%; */
+/* } */
+/* } */
+/* @media only screen and (max-width: 1440px) { */
+/* For mobile phones: */
+/* .menu, .main, .right { */
+/* width: 100%; */
+/* } */
+/* }  */
