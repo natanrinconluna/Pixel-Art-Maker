@@ -1,6 +1,6 @@
 ##
 <p align="center">
-<img src="./screenshot.png" width="900" height="300">
+<img src="./screenshot.png" width="900" height="500">
 </p>
 # Pixel Art Maker
 
