@@ -1,6 +1,6 @@
 ##
 <p align="center">
-<img src="./desktop/test/Portfolio/Pixel-Art-Maker--Front-End.gif" width="900" height="300">
+<img src="./desktop/test/Portfolio/Pixel-Art-Maker--Front-End/screenshot.png" width="900" height="300">
 </p>
 # Pixel Art Maker
 
